@@ -8,7 +8,13 @@ const elementos = [
 const container = document.querySelector(".container");
 const div = document.createElement("div");
 
-for (let i = 0; i < elementos.lenght; i++) {
-  console.log(elementos[i].tag);
-}
+for (let i = 0; i < elementos.length; i++) {
+  let { tag, texto } = elementos[i]; //desestruturação
+  let tagCriada = document.createElement(tag);
+  let textoCriado = document.createTextNode(texto)
+  
 
+  tagCriada.appendChild(textoCriado);
+  div.appendChild(tagCriada)
+}
+container.appendChild(div);
