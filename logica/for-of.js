@@ -1,41 +1,34 @@
-//const nome = 'Luiz Otávio';
-const nomes = ["Luiz", "Otávio", "Henrique"];
+const nomes = ['Luiz', 'Otavio', 'Henrique'];
 
 const pessoa = {
-    nome: 'Luiz',
-    sobrenome: 'Otávio',
+  nome: 'Luiz',
+  sobrenome: 'Otavio',
+};
+/**
+ * for clássico - Geralmente com iteráveis (arrays ou string)
+ * for in - Retoena o indice ou chave (string, array ou objetos)
+ * for of retorna o vlor em si (iteráveis, arrays ou string)
+ */
+for (let chave in pessoa) {
+  console.log(chave, pessoa[chave]);
 }
 
-/**
- * for classico - Geralnmente com interáveis (array ou strings)
- * for in - Retorna inde ou chave (string, array ou objatos)
- * for of - Retorna o valor em si (interáveis, arrays ou strings)
- */
-
-/* for(let chave in pessoa) {
-    console.log(chave, pessoa[chave]);
+/* for(let i = 0; i < nomes.length; i++) {
+  console.log(nomes[i]);
 } */
 
-
-//padrão
-console.log(">>>>> for Padrão <<<<<<");
-for (let i = 0; i < nomes.length; i++) {
-  console.log(nomes[i]);
-}
-//For in
-console.log(">>>>> for in <<<<<<");
-for (let i in nomes) {
-  console.log(nomes[i]);
-}
-
-console.log(">>>>> for of <<<<<<");
-
-//for of
-for (let valor of nomes) {
+/* for (let i in nomes) {
+  console.log(`usando for in :)  ${nomes[i]}`);
+} */
+/* or (let valor of nomes) {
+  //não precisa colocar indice[i]
   console.log(valor);
 }
 
-console.log(">>>>> forEach <<<<<<");
 nomes.forEach(function (valor, indice, array) {
   console.log(valor, indice, array);
 });
+nomes.forEach((valor, indice) => {
+  console.log(valor, indice);
+});
+ */

@@ -1,12 +1,13 @@
-const paragrafos = document.querySelector(".paragrafos");
-const ps = paragrafos.querySelectorAll("p");
+const paragrafos = document.querySelector('.paragrafos');
 
-const estilosBody = getComputedStyle(document.body);
-const backgroundColorBody = estilosBody.backgroundColor;
-console.log(backgroundColorBody);//exibir o codigo da cor do body
+const ps = document.querySelectorAll('p');
+
+const stylesBody = getComputedStyle(document.body)
+const backgroundColoBody = stylesBody.backgroundColor
+
+console.log(backgroundColoBody);
 
 for (let p of ps) {
-    p.style.backgroundColor = backgroundColorBody
-    p.style.color = '#fff'
-} 
- 
+  p.style.backgroundColor = backgroundColoBody
+  p.style.color = "#fff"
+}

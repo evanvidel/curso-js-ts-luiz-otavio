@@ -1,28 +1,33 @@
-//const frutas = ["pera", "Maça", "Uva"];
+// for in ler os indices ou chaves do objeto
 
-/* for (let i = 0; i < frutas.length; i++){
-    console.log(frutas[i]);
-} */
+const frutas = ['pera', 'Maça', 'Uva'];
 
-//For in -> lê os indices ou chaves do objeto
-/* for (let i in frutas) {
-    console.log(frutas[i]);
-} */
-
-const pessoa = {
-  nome: "Luiz",
-  sobrenaome: "Otávio",
-  idade: 30,
-};
-
-for (let chave in pessoa) {
-  console.log(chave, pessoa[chave]);
+for (let i in frutas) {
+  console.log(frutas[i]);
 }
 
-/* //console.log(pessoa.nome);
-const chave = 'nome'
-console.log(pessoa[chave])
+const pessoa = {
+  nome: 'Luiz',
+  sobrenome: 'Otávio',
+  idade: 34,
+};
 
-for(let chaves in pessoa){
-    console.log(chaves);
+const chave = 'nome';
+
+console.log(`pegando a chave ${chave}`);
+
+for (const key in pessoa) {
+  console.log(key, pessoa[key]);
+}
+
+/* console.log(pessoa.nome);
+console.log(pessoa['nome']);
+
+for (let i in pessoa) {
+  console.log(pessoa[i]);
 } */
+
+/* for (let i = 0; i < frutas.length; i++) {
+  console.log(frutas[i]);
+}
+ */

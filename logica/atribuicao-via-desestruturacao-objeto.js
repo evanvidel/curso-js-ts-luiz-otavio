@@ -1,22 +1,15 @@
 const pessoa = {
-  nome: "Luiz",
-  sobrenome: "Miranda",
+  nome: 'Luiz',
+  sobrenome: 'Miranda',
   idade: 30,
   endereco: {
-    rua: "Avenida Brasil",
+    rua: 'Avenida Brasil',
     numero: 320,
   },
 };
+//Atribuição via desestruturação
+/* const { endereco: {rua, numero}, endereco } = pessoa;
+console.log(rua, numero, endereco); */
 
-//atribuição via desestruturação
-//const { nome, sobrenome } = pessoa;
-/* const {
-  endereco: { rua: r, numero },
-  endereco,
-} = pessoa;
-//console.log(nome,sobrenome);
-console.log(r, numero, endereco); */
-
-const {nome, ...resto} = pessoa;
-
-console.log(nome,resto);
+const {nome, sobrenome, ...resto} = pessoa
+console.log(nome,sobrenome, resto);

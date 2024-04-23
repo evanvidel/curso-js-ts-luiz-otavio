@@ -9,7 +9,7 @@
  * NÃO UTILIZE VAR , UTILIZE CONST
  */
 
-const nome = "Joaão";
+const nome = "João";
 
 const primeiroNumero = '5';
 const segundoNumero = 10;
