@@ -71,6 +71,6 @@ function adiconaTarefasSalvas() {
   
   for (let tarefa of listaDeTarefas) {
     criaTarefa(tarefa);
-  }
+  }S
 }
 adiconaTarefasSalvas();
